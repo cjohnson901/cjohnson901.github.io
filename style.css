@@ -156,7 +156,7 @@ footer a {
     color: #80d4ff;
 }
 
-/* Adapt the layout for smaller screens */
+/* Layout for smaller screens */
 @media (max-width: 650px) {
     .header-content {
         flex-direction: column;
