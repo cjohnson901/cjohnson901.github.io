@@ -1,27 +1,21 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An educational website exploring web browsers, their architecture, security, and role in modern computing.">
-
     <title>Web Browsers | Home</title>
-
-    <!-- Connect the shared stylesheet used by every page. -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- The header contains the website title and main navigation. -->
-    <header class="site-header">
+    <header>
         <div class="container header-content">
             <a class="site-title" href="index.html">Web Browsers</a>
 
-            <nav class="main-nav" aria-label="Main navigation">
+            <nav>
                 <a href="index.html" aria-current="page">Home</a>
                 <a href="architecture.html">Architecture</a>
-                <a href="security.html">Security &amp; Privacy</a>
+                <a href="security.html">Security</a>
                 <a href="concepts.html">Key Concepts</a>
                 <a href="references.html">References</a>
                 <a href="about.html">About</a>
@@ -30,17 +24,15 @@
     </header>
 
     <main>
-        <!-- The hero section introduces the website's main topic. -->
-        <section class="hero">
+        <section class="hero" id="introduction">
             <div class="container">
-                <p class="eyebrow">IT 3203 Web Development Project</p>
-
                 <h1>Web Browsers: The Platform for Modern Computing</h1>
 
-                <p class="hero-description">
-                    Discover how web browsers retrieve information, display
-                    interactive websites, protect users, and power modern
-                    applications.
+                <p>
+                    Web browsers allow users to access websites, run
+                    applications, and interact with information online.
+                    This project explores how browsers work, how they
+                    protect users, and how they have evolved.
                 </p>
 
                 <a class="button" href="architecture.html">
@@ -49,185 +41,71 @@
             </div>
         </section>
 
-        <div class="container page-content">
+        <div class="container content">
 
-            <!-- This section provides the abstract for the project. -->
-            <section class="content-section" id="introduction">
-                <h2>Introduction</h2>
-
-                <p>
-                    Web browsers are essential software applications that
-                    allow people to access and interact with resources on
-                    the World Wide Web. They retrieve information from web
-                    servers, interpret HTML and CSS, execute JavaScript,
-                    and display websites that users can navigate and use.
-                </p>
-
-                <p>
-                    Modern browsers do much more than display documents.
-                    They support online productivity tools, video streaming,
-                    interactive applications, games, and cloud-based services.
-                    Their architecture also includes technologies designed
-                    to improve performance, security, privacy, and
-                    compatibility.
-                </p>
-
-                <p>
-                    This project explores how browsers work, how their
-                    technology has evolved, and why they are important to
-                    modern computing.
-                </p>
-            </section>
-
-            <!-- Key terms provide an overview of the project's vocabulary. -->
-            <section class="content-section" id="key-terms">
+            <section>
                 <h2>Key Terms</h2>
 
-                <div class="card-grid">
-                    <article class="info-card">
-                        <h3>Rendering Engine</h3>
-                        <p>
-                            Software responsible for interpreting webpage
-                            content and displaying it visually.
-                        </p>
-                    </article>
-
-                    <article class="info-card">
-                        <h3>JavaScript Engine</h3>
-                        <p>
-                            A component that executes JavaScript code so
-                            websites can respond to user actions.
-                        </p>
-                    </article>
-
-                    <article class="info-card">
-                        <h3>Browser Security</h3>
-                        <p>
-                            Technologies and restrictions that help isolate
-                            websites and protect users and their devices.
-                        </p>
-                    </article>
-
-                    <article class="info-card">
-                        <h3>Web Standards</h3>
-                        <p>
-                            Shared technical specifications that help
-                            websites work consistently across browsers.
-                        </p>
-                    </article>
-                </div>
+                <ul>
+                    <li><strong>HTML:</strong> Defines webpage structure.</li>
+                    <li><strong>CSS:</strong> Controls webpage appearance.</li>
+                    <li><strong>JavaScript:</strong> Adds interactivity.</li>
+                    <li><strong>Rendering engine:</strong> Processes webpage content for display.</li>
+                </ul>
             </section>
 
-            <!-- The table of contents links to the other project pages. -->
-            <section class="content-section" id="contents">
+            <section>
                 <h2>Explore the Website</h2>
 
-                <p>
-                    Use the following guide to explore the major topics
-                    covered in this project.
-                </p>
-
-                <ol class="contents-list">
-                    <li>
-                        <a href="architecture.html">Browser Architecture</a>
-                        — Learn how browsers process and display websites.
-                    </li>
-
-                    <li>
-                        <a href="security.html">Security and Privacy</a>
-                        — Explore browser protections and online privacy.
-                    </li>
-
-                    <li>
-                        <a href="concepts.html">Key Concepts</a>
-                        — Review seven important browser-related terms.
-                    </li>
-
-                    <li>
-                        <a href="references.html">References and Resources</a>
-                        — Find documentation and additional learning materials.
-                    </li>
-
-                    <li>
-                        <a href="about.html">About This Project</a>
-                        — Learn about the purpose of this website.
-                    </li>
+                <ol>
+                    <li><a href="architecture.html">Browser Architecture</a> — How browsers work.</li>
+                    <li><a href="security.html">Security and Privacy</a> — How browsers protect users.</li>
+                    <li><a href="concepts.html">Key Concepts</a> — Important browser terminology.</li>
+                    <li><a href="references.html">References</a> — Research sources and resources.</li>
+                    <li><a href="about.html">About</a> — The purpose of this project.</li>
                 </ol>
             </section>
 
-            <!-- A comparison table demonstrates the use of HTML tables. -->
-            <section class="content-section" id="browser-engines">
-                <h2>Examples of Browser Engines</h2>
+            <section>
+                <h2>Browser Engines</h2>
 
-                <p>
-                    Different browsers may use different rendering engines.
-                    The following examples illustrate several major browser
-                    projects and their associated engines.
-                </p>
-
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col">Browser</th>
-                                <th scope="col">Rendering Engine</th>
-                                <th scope="col">JavaScript Engine</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>Google Chrome</td>
-                                <td>Blink</td>
-                                <td>V8</td>
-                            </tr>
-
-                            <tr>
-                                <td>Microsoft Edge</td>
-                                <td>Blink</td>
-                                <td>V8</td>
-                            </tr>
-
-                            <tr>
-                                <td>Mozilla Firefox</td>
-                                <td>Gecko</td>
-                                <td>SpiderMonkey</td>
-                            </tr>
-
-                            <tr>
-                                <td>Apple Safari</td>
-                                <td>WebKit</td>
-                                <td>JavaScriptCore</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <p class="small-note">
-                    These are examples of the engines associated with the
-                    listed browsers; implementations can evolve over time.
-                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Browser</th>
+                            <th>Rendering Engine</th>
+                            <th>JavaScript Engine</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chrome</td>
+                            <td>Blink</td>
+                            <td>V8</td>
+                        </tr>
+                        <tr>
+                            <td>Firefox</td>
+                            <td>Gecko</td>
+                            <td>SpiderMonkey</td>
+                        </tr>
+                        <tr>
+                            <td>Safari</td>
+                            <td>WebKit</td>
+                            <td>JavaScriptCore</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
         </div>
     </main>
 
-    <!-- The footer identifies the course project as required. -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>IT 3203 Web Development Project</p>
-
-            <p>
-                Course website:
-                <a href="https://ksuweb.github.io/IT3203/">
-                    IT 3203
-                </a>
-            </p>
-
-            <p>&copy; 2026 Web Browsers Project</p>
-        </div>
+    <footer>
+        <p>IT 3203 Web Development Project</p>
+        <p>
+            <a href="https://ksuweb.github.io/IT3203/">IT 3203 Course Website</a>
+        </p>
     </footer>
 
 </body>
 </html>
-```
