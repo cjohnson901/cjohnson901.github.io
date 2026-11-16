@@ -4,7 +4,7 @@ const results = document.getElementById("quiz-results");
 const timerDisplay = document.getElementById("timer");
 const resetButton = document.getElementById("reset-quiz");
 
-const timeLimit = 10; // 10 minutes in seconds
+const timeLimit = 600; // 10 minutes in seconds
 let timeLeft = timeLimit;
 let timer;
 let finished = false;
