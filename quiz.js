@@ -4,7 +4,7 @@ const results = document.getElementById("quiz-results");
 const timerDisplay = document.getElementById("timer");
 const resetButton = document.getElementById("reset-quiz");
 
-const timeLimit = 600; // 10 minutes in seconds
+const timeLimit = 10; // 10 minutes in seconds
 let timeLeft = timeLimit;
 let timer;
 let finished = false;
@@ -106,7 +106,9 @@ function submitQuiz() {
         `;
     }
 
+    // Determine whether the user passed or ran out of time.
     const passed = score >= 7;
+    const timedOut = timeLeft === 0;
     const elapsed = timeLimit - timeLeft;
     const minutes = Math.floor(elapsed / 60);
     const seconds = elapsed % 60;
@@ -114,6 +116,7 @@ function submitQuiz() {
     // Show overall score, time spent, and question feedback
     results.innerHTML = `
         <h2>Quiz Results</h2>
+        ${timedOut ? "<p><strong>Time's up! Your quiz was submitted automatically.</strong></p>" : ""}
         <h3 class="${passed ? "correct" : "incorrect"}">
             ${passed ? "Passed!" : "Not Passed"}
         </h3>
