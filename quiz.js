@@ -50,10 +50,10 @@ function startTimer() {
     clearInterval(timer);
 
     timer = setInterval(() => {
-        timeLeft--;
+        timeLeft = Math.max(0, timeLeft - 1);
         updateTimer();
 
-        if (timeLeft <= 0) {
+        if (timeLeft === 0) {
             submitQuiz();
         }
     }, 1000);
