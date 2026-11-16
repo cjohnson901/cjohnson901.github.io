@@ -155,10 +155,89 @@ footer {
 footer a {
     color: #80d4ff;
 }
+
 /* Keep browser diagrams responsive on smaller screens. */
 .browser-image {
     max-width: 100%;
     height: auto;
+}
+
+/* Quiz form layout and question groups */
+#quiz-form fieldset {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+#quiz-form legend {
+    font-weight: bold;
+    color: #205985;
+}
+
+#quiz-form label {
+    display: inline-block;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+/* Style text answers and selection controls */
+#quiz-form input[type="text"] {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid #aab8c8;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#quiz-form input[type="radio"],
+#quiz-form input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #205985;
+}
+
+/* Quiz buttons */
+#quiz-form .button {
+    border: none;
+    background: #205985;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#quiz-form .button:hover {
+    background: #14243a;
+}
+
+/* Results panel: ID selector */
+#quiz-results {
+    margin-top: 25px;
+    padding: 20px;
+    border: 2px solid #205985;
+    border-radius: 6px;
+    background: white;
+}
+
+/* Correct and incorrect answer feedback */
+.correct {
+    color: #176534;
+}
+
+.incorrect {
+    color: #b42318;
+}
+
+#quiz-results p {
+    padding: 10px;
+    border-bottom: 1px solid #dce3ec;
+}
+
+/* Make the remaining time easy to see */
+#timer {
+    color: #205985;
+    font-size: 1.3rem;
 }
 
 /* Layout for smaller screens */
